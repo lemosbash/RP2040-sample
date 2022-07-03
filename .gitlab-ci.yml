@@ -1,0 +1,10 @@
+image: lemosx/pipico-catcher
+
+test:
+  script:
+    - mkdir build && cd build/
+    - cmake ..
+    - make
+  only:
+  - master
+

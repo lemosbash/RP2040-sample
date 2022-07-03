@@ -1,0 +1,18 @@
+= RP2040 projetct template
+
+== What Is The RP2040
+
+The RP2040 (or Raspberry Pi Pico) is a microcontroller used for learning and smalll projects, featuring a complete chip that can run programs alone, flashed through a USB port.
+
+== What can i do with it
+
+Without plugging stuff to the pins, so far, not much. But it accepts I/O through the way it's schematics presents: `https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf` and then:
+
+* Take a protoboard and blink leds!
+* Do bigger projects with another modules plugged-in to the pins
+* Develop and learn with toolchains like mikropython 
+* Handle I/O from USB with minicom
+
+=== The pipico-catcher and this repo
+
+Testing is always needed and should never be forgotten, from it, you can take errors and improve the software to a better version of itself, through automated tests and CI scripts, for this, you need a CI runner and sometimes, a custom docker image, containing all the tools and settings you need for running the CI script. 
