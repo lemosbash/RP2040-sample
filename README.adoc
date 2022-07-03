@@ -15,4 +15,8 @@ Without plugging stuff to the pins, so far, not much. But it accepts I/O through
 
 === The pipico-catcher and this repo
 
+**README**
+
+Although the repo uses `set(PICO_SDK_FETCH_FROM_GIT on)` i do not recommend using it in your personal project, it will fetch the pico-sdk from scratch at each build, export the PICO_SDK_PATH variable instead. 
+
 Testing is always needed and should never be forgotten, from it, you can take errors and improve the software to a better version of itself, through automated tests and CI scripts, for this, you need a CI runner and sometimes, a custom docker image, containing all the tools and settings you need for running the CI script. 
