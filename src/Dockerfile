@@ -1,8 +1,5 @@
-FROM alpine 
+FROM ubuntu
 
-RUN apk update
-RUN apk add cmake git gcc
-RUN git clone https://github.com/raspberrypi/pico-sdk
-RUN cd pico-sdk
-RUN export PICO_SDK_PATH=$PWD 
-RUN echo $PICO_SDK_PATH
+RUN apt update
+#https://github.com/raspberrypi/pico-sdk instructions 
+RUN DEBIAN_FRONTEND=noninteractive apt install -y g++ gcc python3 git cmake gcc-arm-none-eabi libnewlib-arm-none-eabi libstdc++-arm-none-eabi-newlib
